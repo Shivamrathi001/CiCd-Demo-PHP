@@ -1,1 +1,1 @@
-echo "hello"
+cd /home/ec2-user
