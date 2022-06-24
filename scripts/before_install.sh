@@ -5,4 +5,5 @@ cd /opt/apps
 mv * /var/www/html
 sudo systemctl start httpd.service
 sudo systemctl enable httpd.service
+sudo systemctl restart httpd
 # rm index.html
