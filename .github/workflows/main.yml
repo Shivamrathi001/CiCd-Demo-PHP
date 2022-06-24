@@ -74,4 +74,4 @@ jobs:
          aws-region: ${{ secrets.AWS_REGION }}
      - name: Deploy to AWS
        run: 
-         aws deploy create-deployment --application-name ${{env.APPLICATION_NAME}} --deployment-group-name ${{env.DEPLOYMENT_GROUP}} --s3-location bucket=${{env.BUCKET_NAME}},key=${{FILE_NAME}}.zip,bundleType=zip
+         aws deploy create-deployment --application-name ${{env.APPLICATION_NAME}} --deployment-group-name ${{env.DEPLOYMENT_GROUP}} --s3-location bucket=${{env.BUCKET_NAME}},key=${{env.FILE_NAME}}.zip,bundleType=zip
